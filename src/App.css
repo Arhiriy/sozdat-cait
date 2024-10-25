@@ -1,0 +1,55 @@
+.main_block{
+    width: 1200px;
+}
+/*==================================================
+--шапка--*/
+body {
+    width: 1200px; /*Ширина блока*/
+    margin: auto;
+    font-family: "Open Sans", sans-serif;
+    }
+.header {
+    display: flex; /*Позиционирование элементов по горизонтали*/
+    align-items: center; /*Выравнивание по вертикали по центру*/
+    padding: 20px; /*Внешние отступы*/
+    justify-content: center; /*Выравнивание по горизонтали по центру*/
+    gap: 20px; /*Внутреннее расстояние между элементами*/
+    }
+.header p {
+    font-weight: bold; /*Жирный текст*/
+    }
+.tab {
+    display: flex;
+    justify-content: space-between; /*Располагает элементы по ширине блока*/
+    gap: 30px;
+    }
+.tab li { /*Обращение от класса к определенному тегу*/
+        list-style-type: none; /*Снятия маркера списка*/
+    }
+.tab li a { /*Обращение от класса к вложенному тегу*/
+    text-decoration: none;
+    color: #000;
+    }
+.block_input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    }
+.cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    }
+
+/*============================================================
+--картинка--*/
+
+.background {
+    background-image: url('../src/img/Aerrow.svg'); /* Укажите путь до вашего изображения */
+    background-size: cover; /* Растягивает изображение по размеру контейнера */
+    background-position: center; /* Центрирует изображение */
+    height: 500px; /* Задайте высоту для блока, чтобы он был виден */
+}
